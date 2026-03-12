@@ -2,9 +2,9 @@
 
 <img src="Images/banner.png" alt="Grabzy Logo" width="500" height="250">
 
-# ⚡ Grabzy
+# ⚡Grabzy⚡
 
-### The Smart Open-Source Social Media Downloader for Desktops
+### The Smart Lightweight Open-Source Social Media Downloader for Desktops
 
 **Download videos from YouTube, Instagram & TikTok — instantly, automatically, beautifully.**
 
@@ -12,8 +12,7 @@
 [![Downloads](https://img.shields.io/github/downloads/v43ky/grabzy/total?color=blue&style=flat-square)](https://github.com/v43ky/grabzy/releases)
 [![Flutter](https://img.shields.io/badge/Built%20with-Flutter-02569B?style=flat-square&logo=flutter)](https://flutter.dev)
 [![yt-dlp](https://img.shields.io/badge/Powered%20by-yt--dlp-FF0000?style=flat-square)](https://github.com/yt-dlp/yt-dlp)
-[![License](https://img.shields.io/github/license/v43ky/grabzy?style=flat-square&color=green)](LICENSE)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey?style=flat-square)](#-installation)
+[![PayPal](https://img.shields.io/badge/Support-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://paypal.me/Ratan14)
 [![Stars](https://img.shields.io/github/stars/v43ky/grabzy?style=flat-square&color=yellow)](https://github.com/v43ky/grabzy/stargazers)
 
 <br>
@@ -30,9 +29,9 @@
 
 - [What is Grabzy?](#-what-is-grabzy)
 - [Why Grabzy?](#-why-grabzy)
+- [Screenshots](#-screenshots)
 - [Features](#-features)
 - [Supported Platforms](#-supported-platforms)
-- [Screenshots](#-screenshots)
 - [Installation](#-installation)
 - [How to Use](#-how-to-use)
 - [Settings & Troubleshooting](#-settings--troubleshooting)
@@ -87,6 +86,28 @@ You've probably tried downloading a video before. Here's how it usually goes:
 
 ---
 
+## 📸 In-app Experiences
+
+- **Clean Modern UI** — Minimal, distraction-free interface. Everything you need, nothing you don't.
+- **Download Speed Indicator** — See real-time download speed and estimated time remaining for each active download.
+- **Platform Icons** — Every download shows the platform it came from so your history is always easy to scan.
+- **Persistent Settings** — All your preferences are remembered across sessions.
+- **Dark & Light Mode** — Follows your system theme automatically.
+
+<div align="center">
+
+| Main Screen | Quality Picker | Download History |
+|---|---|---|
+| ![Main](Images/app-screenshot.png) | ![Quality](Images/quality.png) | ![History](Images/history.png) |
+
+| Notifications | Settings | Troubleshooting |
+|---|---|---|
+| ![Notifications](Images/notification-download-feature.png) | ![Settings](Images/settings.png) | ![Troubleshooting](Images/troubleshoot.png) |
+
+</div>
+
+---
+
 ## ✨ Features
 
 ### 🚀 Core Features
@@ -118,18 +139,6 @@ You've probably tried downloading a video before. Here's how it usually goes:
 - **Bundled ffmpeg** — Grabzy automatically downloads and manages ffmpeg silently on first launch. No manual installation needed. ffmpeg is stored in Grabzy's own tools folder and never touches your system.
 
 - **Self-Healing Downloads** — If a download fails for a known reason (outdated yt-dlp, network hiccup, format unavailable), Grabzy automatically fixes the issue and retries before notifying you of any problem.
-
-- **Smart Error Messages** — When something goes wrong, Grabzy tells you exactly what happened in plain English — not a raw error code dump — with a suggested fix for each error type.
-
-- **Detailed Logging** — Every yt-dlp command and its output is logged to a local log file. If you ever need help, you can share logs directly from Settings with one click.
-
-### 🎨 App Experience
-
-- **Clean Modern UI** — Minimal, distraction-free interface. Everything you need, nothing you don't.
-- **Download Speed Indicator** — See real-time download speed and estimated time remaining for each active download.
-- **Platform Icons** — Every download shows the platform it came from so your history is always easy to scan.
-- **Persistent Settings** — All your preferences are remembered across sessions.
-- **Dark & Light Mode** — Follows your system theme automatically.
 
 ---
 
@@ -163,23 +172,6 @@ You've probably tried downloading a video before. Here's how it usually goes:
 | 360p | ✅ | ✅ | ✅ |
 | Audio MP3 | ✅ | ✅ | ✅ |
 
----
-
-## 📸 In-app Experiences
-
-<div align="center">
-
-| Main Screen | Quality Picker | Download History |
-|---|---|---|
-| ![Main](Images/app-screenshot.png) | ![Quality](assets/screenshots/quality.png) | ![History](Images/history.png) |
-
-| Notifications | Settings | Troubleshooting |
-|---|---|---|
-| ![Notifications](Images/notification-download-feature.png) | ![Settings](assets/screenshots/settings.png) | ![Troubleshooting](assets/screenshots/troubleshoot.png) |
-
-</div>
-
----
 
 ## 💾 Installation
 
@@ -309,7 +301,6 @@ Grabzy has a full built-in diagnostic suite. Go to **Settings → Troubleshootin
 Checks everything at once and shows a clear green/red status for each component:
 - yt-dlp found and version
 - ffmpeg found and version
-- Tools folder exists and is writable
 - All three platforms reachable and working
 
 **Update yt-dlp**
@@ -320,15 +311,6 @@ If ffmpeg is corrupted or missing, this deletes and re-downloads it cleanly.
 
 **Test Download**
 Downloads a short public domain video at 1080p to confirm everything is working end to end.
-
-**Platform Tests**
-Test YouTube, Instagram, and TikTok individually to confirm each one is reachable and working.
-
-**View Logs**
-See the last 100 lines of yt-dlp output from recent downloads. Use this to diagnose any problem. Copy logs to clipboard with one click to share with support.
-
-**Clear Temp Files**
-Deletes any leftover `.part` or `.ytdl` files from interrupted downloads to free up space.
 
 ---
 
@@ -345,7 +327,6 @@ Go to **Settings → Troubleshooting → Run Diagnostics**. If ffmpeg shows a re
 YouTube occasionally rate-limits downloads. Try:
 1. Wait a few minutes and retry
 2. Update yt-dlp via **Settings → Troubleshooting → Update yt-dlp**
-3. Import your browser cookies (Settings → Cookie Manager) to authenticate
 
 ---
 
@@ -384,22 +365,6 @@ Progress streamed to app in real time
 File saved to your downloads folder
        ↓
 Completion notification with filename
-```
-
-**Auto-Update Flow:**
-```
-App starts
-    ↓
-Check yt-dlp version (cached daily)
-    ↓
-Call GitHub API for latest version tag
-    ↓
-Match? → Continue normally
-No match? → Download new binary silently
-    ↓
-Replace old binary
-    ↓
-Show toast: "yt-dlp updated"
 ```
 
 ---
